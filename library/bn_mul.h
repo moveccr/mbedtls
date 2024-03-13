@@ -280,7 +280,7 @@
         "movl   %4, %%a3        \n\t"   \
         "movl   %5, %%d3        \n\t"   \
         "movl   %6, %%d2        \n\t"   \
-        "moveq  #0, %%d0        \n\t"
+        "subl   %%d0, %%d0      \n\t"
 
 #define MULADDC_X1_CORE                 \
         "movel  %%a2@+, %%d1    \n\t"   \
